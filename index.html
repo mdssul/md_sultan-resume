@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md. Salauddin Sultan - Resume</title>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1 {
+  margin-bottom: 5px;
+  color: #38bdf8;
+}
+
+h2 {
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  border: 1px solid #38bdf8;
+  padding: 8px 14px;
+  margin: 5px;
+  border-radius: 8px;
+  color: #38bdf8;
+  display: inline-block;
+}
+
+.buttons a:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.contact a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.job-title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.company {
+  font-weight: bold;
+  color: #94a3b8;
+}
+
+.date {
+  float: right;
+  color: #94a3b8;
+}
+
+.clear {
+  clear: both;
+}
+
+.badge {
+  display: inline-block;
+  background: #38bdf8;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-5px) scale(1.01);
+}
+
+/* Typing effect */
+.typing {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .date {
+    float: none;
+    display: block;
+    margin-top: 5px;
+  }
+}
+
+.profile-pic img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin-top: 15px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #38bdf8;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Badge styling */
+.status-badge {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: #22c55e;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  font-weight: 500;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="card">
+  <div class="profile-pic">
+    <img src="profile.jpeg" alt="Profile Photo">
+    
+    <!-- Status Badge -->
+    <span class="status-badge">● Available </span>
+  </div>
+
+<h1>Md. Salauddin Sultan</h1>
+<p class="typing" id="typing"></p>
+<p>📍 Bengaluru, India</p>
+
+  <div class="buttons">
+    <a href="mailto:mdssul@gmail.com">📧 mdssul@gmail.com</a>
+    <a href="tel:+919916630281">📞 +91-9916630281</a>
+    <a href="https://www.linkedin.com/in/mdsalauddinsultan/" target="_blank">🔗 LinkedIn</a>
+    <a href="Md_Salauddin_Sultan_10years.pdf" download class="download" target="_blank"> ⬇️ Download Resume</a>
+  </div>
+</div>
+
+<div class="card">
+<h2>Professional Summary</h2>
+  <p>
+    Detail-oriented Software Development Engineer in Test (SDET) with 10 years of experience, specializing in Database Testing, PL/SQL development, and Web Application Testing & Automation. Proven expertise in validating complex database systems, ensuring data integrity, and testing end-to-end web-based applications.<br><br>
+    Strong experience in Oracle databases, backend validation, and automation using Java, Python, and Shell scripting. Adept at working in Agile environments, improving test coverage, and delivering high-quality, scalable, and secure applications.
+  </p>
+</div>
+
+<!-- Core Skills -->
+<div class="card">
+<h2>Core Skills</h2>
+<ul>
+      <li>Database & Backend: Oracle DB (11g–26ai), PL/SQL, SQL Query Optimization, Data Validation.</li>
+      <li>Web Technologies: JavaScript, REST APIs, Web Application Testing.</li>
+      <li>Programming: Java, Python, Perl, Shell Scripting.</li>
+      <li>Testing & Automation: Test Automation, CI/CD, API Testing(Postman).</li>
+      <li>Tools & Platforms: SQL Developer, IntelliJ, Eclipse, Postman, Visual Studio, Jira, Confluence.</li>
+      <li>Operating Systems: Linux/Unix, macOS, Windows. </li>
+</ul>
+</div>
+
+<!-- Key Expertise -->
+<div class="card">
+  <h2>Key Expertise</h2>
+  <ul>
+    <li>Database Testing & Validation</li>
+    <li>Web Application Testing</li>
+    <li>PL/SQL Development</li>
+    <li>API & Backend Testing</li>
+    <li>Test Automation Frameworks</li>
+    <li>Data Integrity & Security Testing</li>
+  </ul>
+</div>
+
+<div class="card">
+<h2>Experience</h2>
+
+<p class="company">Oracle Corporation <span class="badge">Current</span></p>
+<p class="job-title">Principal Member Technical Staff <span class="date">Oct 2025 - Present</span></p>
+      <ul>
+        <li>Led test automation initiatives, mentoring team members and collaborating with cross-functional stakeholders to drive quality and efficiency in Agile environments.</li>
+        <li>Led Common Criteria (CC) certification for Oracle Database 26ai, driving security validation efforts and ensuring compliance with international security standards.</li>
+        <li>Demonstrated extensive experience in PL/SQL development, query optimization, and backend data validation across multiple Oracle database versions.</li>
+        <li>Identified and reported 150+ security defects and 250+ functional issues, significantly enhancing product stability and security posture.</li>
+        <li>Mentored junior engineers in automation scripting, testing best practices, and version control, improving team productivity and code quality.</li>
+      </ul>
+
+<p class="job-title">Senior Member Technical Staff <span class="date">Nov 2020 - Oct 2025</span></p>
+      <ul>
+        <li>Designed and executed database-centric test strategies for Oracle products, including Unified Auditing, Database Security Assessment Tool (DBSAT), and Privilege Analysis.</li>
+        <li>Leveraged strong expertise in PL/SQL, Java, Python, and scripting languages to validate complex backend systems and workflows.</li>
+        <li>Developed and maintained automation frameworks for both web and database testing, improving efficiency and scalability.</li>
+        <li>Designed and optimized CI/CD pipelines, reducing deployment time and minimizing manual intervention.</li>
+        <li>Increased regression test coverage from 70% to 90%, reducing risks and improving overall product quality.</li>
+        <li>Proactively enhanced cross-functional test runs, improving the stability and reliability of the Unified Auditing feature.</li>
+        <li>Took end-to-end ownership of feature validation, from requirement analysis to production readiness, ensuring quality deliverables.</li>
+        <li>Collaborated with developers and project managers to define acceptance criteria, test strategies, and quality benchmarks.</li>
+        <li>Built internal QA tools such as Regress Finder, Diff Checker, and TDBaaS for regression detection, log comparison, and automated test data/database setup.</li>
+        <li>Partnered closely with development teams to debug backend and database-related issues.</li>
+      </ul>
+
+<p class="job-title">Member Technical Staff <span class="date">Feb 2018 - Nov 2020</span></p>
+      <ul>
+        <li>Played a key role in Common Criteria (CC) certification testing for Oracle Database 19c, validating security controls and ensuring adherence to global security standards.</li>
+        <li>Validated data integrity, stored procedures, triggers, and complex SQL workflows to ensure system reliability and accuracy.</li>
+        <li>Performed end-to-end testing of web-based applications, ensuring seamless integration between UI, API, and database layers.</li>
+      </ul>
+
+<p class="company">CGI Inc.</p>
+<p class="job-title">Associate Software Engineer <span class="date">Nov 2015 - Feb 2018</span></p>
+      <ul>
+        <li>Developed a web-based Sentiment Analysis application with interactive visualizations (bar charts, pie charts, word clouds), enabling effective analysis of user feedback from social media platforms.</li>
+        <li>Developed an automated hourly email notification system to report job execution status, improving team visibility and reducing manual monitoring.</li>
+        <li>Built utilities such as Job Report and Data Upload tools to automate reporting workflows and streamline data processing.</li>
+      </ul>
+
+</div>
+
+<!-- Education -->
+<div class="card">
+<h2>Education</h2>
+<p><strong>M.Tech (Software Engineering) <span class="date"> 2012 - 2014</span></strong><br>
+R.V. College of Engineering • Bengaluru • India</p>
+
+<p><strong>B.Tech (Computer Science) <span class="date"> 2007 - 2011</span></strong><br>
+Cochin University of Science and Technology • Kochi • India</p>
+</div>
+
+<!-- Certifications -->
+<div class="card">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Qualified GATE 2011, 2012 and 2014.</li>
+    <li>Distinction in Master of Technology.</li>
+    <li>Oracle Cloud Infrastructure Certified Generative AI Professional.</li>
+  </ul>
+</div>
+
+<!-- Hobbies -->
+<div class="card">
+  <h2>Hobbies</h2>
+  <ul>
+    <li>🏸 Playing badminton to stay active, focused and competative mindset.</li>
+    <li>🎧 Listening to Calm Music (Lo-fi, Instrumental)</li>
+  </ul>
+</div>
+
+</div>
+
+<script>
+// Typing effect
+const text = "Software Development Engineer in Test";
+let i = 0;
+function typing() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 40);
+  }
+}
+typing();
+
+// Scroll animation
+const cards = document.querySelectorAll(".card");
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if (top < window.innerHeight - 50) {
+      card.classList.add("show");
+    }
+  });
+});
+
+// Load animation
+window.addEventListener("load", () => {
+  cards.forEach(card => card.classList.add("show"));
+});
+</script>
+
+</body>
+</html>
