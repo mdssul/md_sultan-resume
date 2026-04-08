@@ -13,6 +13,10 @@ body {
   color: #e2e8f0;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .container {
   max-width: 900px;
   margin: 30px auto;
@@ -20,6 +24,7 @@ body {
 }
 
 .card {
+  position: relative;
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
   padding: 20px;
@@ -81,12 +86,12 @@ ul {
   font-weight: bold;
   color: #fff;
 }
-
+/*
 .company {
   font-weight: bold;
   color: #94a3b8;
 }
-
+*/
 .date {
   float: right;
   color: #94a3b8;
@@ -102,7 +107,7 @@ ul {
   color: black;
   padding: 4px 10px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 10px;
 }
 
@@ -115,14 +120,31 @@ ul {
 .typing {
   color: #38bdf8;
   font-weight: 600;
+  margin-right: 110px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .date {
-    float: none;
-    display: block;
-    margin-top: 5px;
+  .status-badge {
+    bottom: 10px;
+    right: 10px;
+    top: auto;   /* prevents it from sticking to top */
+  }
+  .profile-pic {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .profile-pic img {
+    position: static;
+    width: 90px;
+    height: 90px;
+  }
+
+  h1,
+  .typing {
+    margin-right: 110px; /* prevents overlap */
   }
 }
 
@@ -148,8 +170,8 @@ ul {
 /* Badge styling */
 .status-badge {
   position: absolute;
-  bottom: 5px;
-  right: 5px;
+  bottom: 10px;
+  right: 10px;
   background: #22c55e;
   color: white;
   font-size: 12px;
@@ -176,10 +198,9 @@ ul {
 <div class="card">
   <div class="profile-pic">
     <img src="profile.jpeg" alt="Profile Photo">
-    
-    <!-- Status Badge -->
-    <span class="status-badge">● Available </span>
   </div>
+  <!-- Status Badge -->
+  <span class="status-badge">● Available </span>
 
 <h1>Md. Salauddin Sultan</h1>
 <p class="typing" id="typing"></p>
@@ -195,7 +216,7 @@ ul {
 
 <div class="card">
 <h2>Professional Summary</h2>
-  <p>
+  <p class="justify-text">
     Detail-oriented Software Development Engineer in Test (SDET) with 10 years of experience, specializing in Database Testing, PL/SQL development, and Web Application Testing & Automation. Proven expertise in validating complex database systems, ensuring data integrity, and testing end-to-end web-based applications.<br><br>
     Strong experience in Oracle databases, backend validation, and automation using Java, Python, and Shell scripting. Adept at working in Agile environments, improving test coverage, and delivering high-quality, scalable, and secure applications.
   </p>
@@ -230,43 +251,45 @@ ul {
 <div class="card">
 <h2>Experience</h2>
 
-<p class="company">Oracle Corporation <span class="badge">Current</span></p>
+<!--p class="company">Oracle Corporation <span class="badge">Current</span></p-->
+<p class="badge">Oracle Corporation </p>
+
 <p class="job-title">Principal Member Technical Staff <span class="date">Oct 2025 - Present</span></p>
-      <ul>
-        <li>Led test automation initiatives, mentoring team members and collaborating with cross-functional stakeholders to drive quality and efficiency in Agile environments.</li>
-        <li>Led Common Criteria (CC) certification for Oracle Database 26ai, driving security validation efforts and ensuring compliance with international security standards.</li>
-        <li>Demonstrated extensive experience in PL/SQL development, query optimization, and backend data validation across multiple Oracle database versions.</li>
-        <li>Identified and reported 150+ security defects and 250+ functional issues, significantly enhancing product stability and security posture.</li>
-        <li>Mentored junior engineers in automation scripting, testing best practices, and version control, improving team productivity and code quality.</li>
+      <ul class="justify-text">
+        <li>Led test automation initiatives, mentoring team members and collaborating with cross-functional stakeholders to drive quality and efficiency in Agile environments.</li><br>
+        <li>Led Common Criteria (CC) certification for Oracle Database 26ai, driving security validation efforts and ensuring compliance with international security standards.</li><br>
+        <li>Demonstrated extensive experience in PL/SQL development, query optimization, and backend data validation across multiple Oracle database versions.</li><br>
+        <li>Identified and reported 150+ security defects and 250+ functional issues, significantly enhancing product stability and security posture.</li><br>
+        <li>Mentored junior engineers in automation scripting, testing best practices, and version control, improving team productivity and code quality.</li><br>
       </ul>
 
 <p class="job-title">Senior Member Technical Staff <span class="date">Nov 2020 - Oct 2025</span></p>
-      <ul>
-        <li>Designed and executed database-centric test strategies for Oracle products, including Unified Auditing, Database Security Assessment Tool (DBSAT), and Privilege Analysis.</li>
-        <li>Leveraged strong expertise in PL/SQL, Java, Python, and scripting languages to validate complex backend systems and workflows.</li>
-        <li>Developed and maintained automation frameworks for both web and database testing, improving efficiency and scalability.</li>
-        <li>Designed and optimized CI/CD pipelines, reducing deployment time and minimizing manual intervention.</li>
-        <li>Increased regression test coverage from 70% to 90%, reducing risks and improving overall product quality.</li>
-        <li>Proactively enhanced cross-functional test runs, improving the stability and reliability of the Unified Auditing feature.</li>
-        <li>Took end-to-end ownership of feature validation, from requirement analysis to production readiness, ensuring quality deliverables.</li>
-        <li>Collaborated with developers and project managers to define acceptance criteria, test strategies, and quality benchmarks.</li>
-        <li>Built internal QA tools such as Regress Finder, Diff Checker, and TDBaaS for regression detection, log comparison, and automated test data/database setup.</li>
-        <li>Partnered closely with development teams to debug backend and database-related issues.</li>
+      <ul class="justify-text">
+        <li>Designed and executed database-centric test strategies for Oracle products, including Unified Auditing, Database Security Assessment Tool (DBSAT), and Privilege Analysis.</li><br>
+        <li>Leveraged strong expertise in PL/SQL, Java, Python, and scripting languages to validate complex backend systems and workflows.</li><br>
+        <li>Developed and maintained automation frameworks for both web and database testing, improving efficiency and scalability.</li><br>
+        <li>Designed and optimized CI/CD pipelines, reducing deployment time and minimizing manual intervention.</li><br>
+        <li>Increased regression test coverage from 70% to 90%, reducing risks and improving overall product quality.</li><br>
+        <li>Proactively enhanced cross-functional test runs, improving the stability and reliability of the Unified Auditing feature.</li><br>
+        <li>Took end-to-end ownership of feature validation, from requirement analysis to production readiness, ensuring quality deliverables.</li><br>
+        <li>Collaborated with developers and project managers to define acceptance criteria, test strategies, and quality benchmarks.</li><br>
+        <li>Built internal QA tools such as Regress Finder, Diff Checker, and TDBaaS for regression detection, log comparison, and automated test data/database setup.</li><br>
+        <li>Partnered closely with development teams to debug backend and database-related issues.</li><br>
       </ul>
 
 <p class="job-title">Member Technical Staff <span class="date">Feb 2018 - Nov 2020</span></p>
-      <ul>
-        <li>Played a key role in Common Criteria (CC) certification testing for Oracle Database 19c, validating security controls and ensuring adherence to global security standards.</li>
-        <li>Validated data integrity, stored procedures, triggers, and complex SQL workflows to ensure system reliability and accuracy.</li>
-        <li>Performed end-to-end testing of web-based applications, ensuring seamless integration between UI, API, and database layers.</li>
+      <ul class="justify-text">
+        <li>Played a key role in Common Criteria (CC) certification testing for Oracle Database 19c, validating security controls and ensuring adherence to global security standards.</li><br>
+        <li>Validated data integrity, stored procedures, triggers, and complex SQL workflows to ensure system reliability and accuracy.</li><br>
+        <li>Performed end-to-end testing of web-based applications, ensuring seamless integration between UI, API, and database layers.</li><br>
       </ul>
 
-<p class="company">CGI Inc.</p>
+<p class="badge">CGI Inc.</p>
 <p class="job-title">Associate Software Engineer <span class="date">Nov 2015 - Feb 2018</span></p>
-      <ul>
-        <li>Developed a web-based Sentiment Analysis application with interactive visualizations (bar charts, pie charts, word clouds), enabling effective analysis of user feedback from social media platforms.</li>
-        <li>Developed an automated hourly email notification system to report job execution status, improving team visibility and reducing manual monitoring.</li>
-        <li>Built utilities such as Job Report and Data Upload tools to automate reporting workflows and streamline data processing.</li>
+      <ul class="justify-text">
+        <li>Developed a web-based Sentiment Analysis application with interactive visualizations (bar charts, pie charts, word clouds), enabling effective analysis of user feedback from social media platforms.</li><br>
+        <li>Developed an automated hourly email notification system to report job execution status, improving team visibility and reducing manual monitoring.</li><br>
+        <li>Built utilities such as Job Report and Data Upload tools to automate reporting workflows and streamline data processing.</li><br>
       </ul>
 
 </div>
